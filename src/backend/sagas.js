@@ -1,7 +1,7 @@
 import { all, takeLatest } from "redux-saga/effects";
 
-import * as helloWorldActions from "../containers/HelloWorld/actions";
-import * as helloWorldSagas from "../containers/HelloWorld/sagas";
+import * as helloWorldActions from "../HelloWorld/HelloWorld.actions";
+import * as helloWorldSagas from "../HelloWorld/HelloWorld.sagas";
 
 export default function* rootSaga() {
   yield all([

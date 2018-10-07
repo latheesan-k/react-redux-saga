@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import HelloWorld from "../../containers/HelloWorld/HelloWorld";
+import HelloWorld from "../HelloWorld/HelloWorld.container";
 
 import "./App.css";
 import logo from "./logo.svg";
