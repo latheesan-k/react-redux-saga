@@ -23,7 +23,7 @@ class App extends Component {
   }
 }
 
-const mapStateToProps = state => ({ responseText: state.helloWorldReducer });
+const mapStateToProps = state => ({ responseText: state.helloWorldReducer.responseText });
 const mapDispatchToProps = dispatch => bindActionCreators({ helloWorldRequest }, dispatch);
 
 export default connect(

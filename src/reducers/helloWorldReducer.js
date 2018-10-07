@@ -1,9 +1,13 @@
 import { HELLO_WORLD_RESPONSE } from "../actions";
 
-export default (state = "", { type, text }) => {
+const initialState = {
+  responseText: null
+};
+
+export default (state = initialState, { type, text }) => {
   switch (type) {
     case HELLO_WORLD_RESPONSE:
-      return text;
+      return { ...state, responseText: text };
 
     default:
       return state;
