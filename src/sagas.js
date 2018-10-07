@@ -1,16 +1,10 @@
-import { put, takeLatest } from "redux-saga/effects";
+import { all, takeLatest } from "redux-saga/effects";
 
-import { HELLO_WORLD_REQUEST, helloWorldResponse, helloWorldError } from "./actions";
+import * as helloWorldTypes from "./containers/HelloWorld/constants";
+import * as helloWorldSagas from "./containers/HelloWorld/sagas";
 
-function* runHelloWorldRequest(action) {
-  try {
-    // TODO: real api call here
-    yield put(helloWorldResponse("Hello from react-redux-saga :)"));
-  } catch (e) {
-    yield put(helloWorldError(e));
-  }
-}
-
-export default function* mySaga() {
-  yield takeLatest(HELLO_WORLD_REQUEST, runHelloWorldRequest);
+export default function* rootSaga() {
+  yield all([
+    takeLatest(helloWorldTypes.HELLO_WORLD_REQUEST, helloWorldSagas.runHelloWorldRequest)
+  ]);
 }

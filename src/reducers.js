@@ -1,6 +1,6 @@
 import { combineReducers } from "redux";
 
-import helloWorldReducer from "./helloWorldReducer";
+import helloWorldReducer from "./containers/HelloWorld/reducer";
 
 export default combineReducers({
   helloWorldReducer
