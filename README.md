@@ -6,5 +6,5 @@ In this project, I aim to:
 - [x] Use redux-sagas
 - [x] Learn about actions, reducers, sagas and redux store
 - [x] Integrate with react devtools
-- [ ] Structure the project using folder by feature
-- [ ] Separate presentation from logic using components and containers
+- [x] Structure the project using folder by feature
+- [x] Separate presentation from logic using components and containers

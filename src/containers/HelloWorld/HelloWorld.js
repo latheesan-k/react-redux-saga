@@ -1,7 +1,7 @@
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 
-import helloWorldComponent from "../../components/HelloWorld";
+import helloWorldComponent from "../../components/HelloWorld/HelloWorld";
 import { helloWorldRequest } from "./actions";
 
 const mapStateToProps = state => ({ responseText: state.helloWorldReducer.responseText });
