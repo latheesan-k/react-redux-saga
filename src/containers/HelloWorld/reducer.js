@@ -1,4 +1,4 @@
-import { HELLO_WORLD_RESPONSE } from "./constants";
+import { HELLO_WORLD_RESPONSE } from "./actions";
 
 const initialState = {
   responseText: null

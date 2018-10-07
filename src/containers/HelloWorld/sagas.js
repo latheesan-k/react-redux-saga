@@ -1,6 +1,6 @@
 import { put } from "redux-saga/effects";
 
-import { helloWorldResponse, helloWorldError } from "./actions";
+import { helloWorldResponse, helloWorldError } from "./actionCreators";
 
 export function* runHelloWorldRequest(action) {
   try {
